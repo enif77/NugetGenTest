@@ -1,3 +1,3 @@
-# Git Generation Test
+# NuGet Packages Generation Test
 
-Shows a simple projects setup with generating nugets.
+Shows a simple projects setup with generation of nugets.
