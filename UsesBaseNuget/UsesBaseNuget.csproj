@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<IsPackable>true</IsPackable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<AssemblyTitle>Uses Base Nuget</AssemblyTitle>
+		<Copyright>(C) 2021 Přemysl Fára</Copyright>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>UsesBaseNuget</PackageId>
+		<!-- <PackageIcon>icon.png</PackageIcon> -->
+		<Version>1.0.1</Version>
+		<Authors>Premysl Fara</Authors>
+		<Title>UsesBaseNuget</Title>
+		<Description>
+			Uses core functions.
+		</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageDescription>Uses BaseNuget.</PackageDescription>
+		<PackageTags>basenuget</PackageTags>
+		<PackageReleaseNotes>Initial version.</PackageReleaseNotes>
+		<!-- <PackageProjectUrl>https://github.com/enif77/EFrt</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/enif77/EFrt.git</RepositoryUrl> -->
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<PackageReference Include="BaseNuget" Version="1.0.0" />  <!-- Means version 1.0.0 and above. -->
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)' == 'Debug'">
+		<ProjectReference Include="..\BaseNuget\BaseNuget.csproj" />
+	</ItemGroup>
+
+</Project>

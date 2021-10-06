@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<IsPackable>true</IsPackable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+		<AssemblyTitle>Base Nuget</AssemblyTitle>
+		<Copyright>(C) 2021 Přemysl Fára</Copyright>
+	</PropertyGroup>
+
+  <PropertyGroup>
+		<PackageId>BaseNuget</PackageId>
+		<!-- <PackageIcon>icon.png</PackageIcon> -->
+		<Version>1.0.1</Version>
+		<Authors>Premysl Fara</Authors>
+		<Title>BaseNuget</Title>
+		<Description>
+			Core functions.
+		</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageDescription>BaseNuget - core functions.</PackageDescription>
+		<PackageTags>basenuget</PackageTags>
+		<PackageReleaseNotes>Initial version.</PackageReleaseNotes>
+		<!-- <PackageProjectUrl>https://github.com/enif77/EFrt</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/enif77/EFrt.git</RepositoryUrl> -->
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+</Project>
